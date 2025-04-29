@@ -1,16 +1,81 @@
 # firebase_assignment10
 
-A new Flutter project.
+# Assignment Week 10
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+You are tasked with creating a mini social feed app. The app should allow users to:
+Register/Login
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Post messages to a public feed
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+View all messages from Firestore
+
+
+Receive updates through FCM
+
+
+Change app behavior using Remote Config (like toggling dark mode or enabling/disabling post feature)
+
+Modules to Implement
+Firebase Authentication
+
+
+Implement email/password sign-up, login, and logout.
+
+
+Store and display the user's name after registration.
+
+
+Cloud Firestore
+
+
+Create a Firestore collection named posts.
+
+
+Each post should include: message, userId, timestamp, and username.
+
+
+Display all posts in reverse chronological order.
+
+
+Only authenticated users can add posts.
+
+
+Remote Config
+
+
+Add a boolean parameter isPostingEnabled.
+
+
+If set to false, hide the post input field and show a message like "Posting is currently disabled".
+
+
+Use default values in code and allow overrides via Firebase Console.
+
+
+Firebase Cloud Messaging (FCM)
+
+
+Set up FCM to receive push notifications.
+
+
+When a new post is added, send a notification to all users:
+"New post by [username]: [first 10 words of the message]".
+
+
+App Distribution
+
+
+Generate a release build (APK).
+
+
+Distribute the app using Firebase App Distribution.
+
+
+Share it with at least one tester for feedback.
+
+
+
+
